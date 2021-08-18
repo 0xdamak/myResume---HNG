@@ -1,0 +1,8 @@
+.about__flex-column {
+    @include respond(720px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center !important;
+        margin-left: 0 !important;
+    }
+}

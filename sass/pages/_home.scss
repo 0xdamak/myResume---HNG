@@ -1,0 +1,185 @@
+.header {
+    display: grid;
+    grid-template-rows: min-content 1fr;
+    padding: 4rem;
+    background-color: $bg-color-light;
+    // height: calc(100vh - 8rem);
+    // height: 100vh;
+    // margin: .5rem;
+    overflow: hidden;
+
+    @include respond(472px) {
+        padding: 2rem;
+    }
+
+    @include respond(430px) {
+        height: calc(100vh - 4rem);
+    }
+
+    @include respond(360px) {
+        height: 100vh;
+    }
+
+    &__logo {
+        font-size: 3rem;
+        font-family: 'Dancing Script', cursive;
+        line-height: 0;
+
+        @include respond(472px) {
+            margin-top: 3rem;
+            margin-left: 3rem;
+        }
+        
+        a {
+            img {
+                width: 10rem;
+                background-color: $color-primary;
+                padding: 1rem;
+            }
+        }
+    }
+
+    &__body {
+        // display: grid;
+        // grid-template-columns: 1fr min-content;
+
+        margin: 4rem 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+        
+        &--text {
+            margin-left: 8%;
+
+            @include respond(600px) {
+                margin: 0 auto;
+                text-align: center;
+
+            }
+            
+            @include respond(375px) {
+            }
+
+            h1 {
+                letter-spacing: -2px;
+
+                svg {
+                    height: 6.8rem;
+                    width: 6.8rem;
+
+                    @include respond(972px) {
+                        
+                    }
+                }
+
+            }
+            .span {
+                display: inline-block;
+
+                span:nth-child(1) {
+                    color: $green;
+                    margin-right: -7.9rem;
+                }
+                span:nth-child(2) {
+                    color: $pink;
+                    margin-right: -2rem;
+                }
+
+                &:hover {
+                    background-color: $color-primary;
+                    transition: all .2s cubic-bezier(0.63, -0.12, 0.74, 0.05);
+
+                    transform: scale(1.03) skewX(-10deg);
+                }
+
+                &:hover span:nth-child(3) {
+                    color: $color-tertiary;
+                    transition: all .3s cubic-bezier(0.63, -0.12, 0.74, 0.05);
+                }
+            }
+
+            p {
+                color: $color-secondary;
+                margin-top: 1rem;
+            }
+        }
+
+        &--img {
+            @include respond(600px) {
+                display: none;
+            }
+
+            img {
+                height: 36rem;
+                border-radius: 50%;
+                padding: 1rem;
+
+                @include respond(972px) {
+                    height: 50rem;
+                }
+
+            }
+        }
+
+        
+    }
+}
+
+.about {
+    padding: 6% 12%;
+    // height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+
+    &__body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &--text {
+            text-align: center;
+        }
+
+        &--article {
+            position: relative;
+            text-align: center;
+            z-index: 5;
+            font-size: 1.6rem;
+            line-height: 1.8;
+            margin-top: 5rem;
+
+            @include respond(720px) {
+                // width: 100%;
+            }
+
+            & p:nth-child(2) {
+                margin-top: 1rem;
+
+                ~ ul {
+                    margin-top: 1rem;
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    list-style: none;
+                    
+                    li {
+                        position: relative;
+                        margin-left: 1.5rem;
+
+                        // &::before {
+                        //     content: "▹";
+                        //     position: absolute;
+                        //     left: 30%;
+                        //     top: 30%;
+                        //     color: $pink;
+                        //     font-size: 1.3rem;
+                        //     line-height: 12px;
+                        // }
+                    }
+                }
+            }
+        }
+    }
+}

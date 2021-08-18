@@ -1,0 +1,79 @@
+// 1em = 16px
+
+@mixin respond($breakpoint) {
+    @if $breakpoint == 972px {
+        @media only screen and (max-width: 60.75em) {
+            @content
+        }
+    }
+    @if $breakpoint == 940px {
+        @media only screen and (max-width: 58.75em) {
+            @content
+        }
+    }
+    @if $breakpoint == 774px {
+        @media only screen and (max-width: 48.375em) {
+            @content
+        }
+    }
+    @if $breakpoint == 768px {
+        @media only screen and (max-width: 48em) {
+            @content
+        }
+    }
+    @if $breakpoint == 720px {
+        @media only screen and (max-width: 45em) {
+            @content
+        }
+    }
+    @if $breakpoint == 600px {
+        @media only screen and (max-width: 37.5em) {
+            @content
+        }
+    }
+    @if $breakpoint == 472px {
+        @media only screen and (max-width: 29.5em) {
+            @content
+        }
+    }
+    @if $breakpoint == 430px {
+        @media only screen and (max-width: 26.875em) {
+            @content
+        }
+    }
+    @if $breakpoint == 375px {
+        @media only screen and (max-width: 23.4375em) {
+            @content
+        }
+    }
+    @if $breakpoint == 360px {
+        @media only screen and (max-width: 22.5em) {
+            @content
+        }
+    }
+    @if $breakpoint == 320px {  
+        @media only screen and (max-width: 20em) {
+            @content
+        }
+    }
+    @if $breakpoint == 1440px {
+        @media only screen and (min-width: 90em) {
+            @content
+        }
+    }
+    @if $breakpoint == 1600px {
+        @media only screen and (min-width: 100em) {
+            @content
+        }
+    }
+    @if $breakpoint == 1800px {
+        @media only screen and (min-width: 112.5em) {
+            @content
+        }
+    }
+    @if $breakpoint == 1920px {
+        @media only screen and (min-width: 120em) {
+            @content
+        }
+    }
+}
