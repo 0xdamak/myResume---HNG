@@ -64,6 +64,7 @@
 
             h1 {
                 letter-spacing: -2px;
+                animation: moveInLeft 1s;
 
                 svg {
                     height: 6.8rem;
@@ -103,10 +104,16 @@
             p {
                 color: $color-secondary;
                 margin-top: 1rem;
+                animation: moveInLeft 1s;
+            }
+
+            a {
+                animation: moveInBottom 1s;
             }
         }
 
         &--img {
+            animation: moveInRight 1s;
             @include respond(600px) {
                 display: none;
             }
