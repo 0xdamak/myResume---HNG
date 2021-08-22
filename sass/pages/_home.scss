@@ -3,21 +3,21 @@
     grid-template-rows: min-content 1fr;
     padding: 4rem;
     background-color: $bg-color-light;
-    // height: calc(100vh - 8rem);
-    // height: 100vh;
-    // margin: .5rem;
     overflow: hidden;
+    // height: calc(100vh - 8rem);
+    height: 100vh;
+    // margin: .5rem;
 
     @include respond(472px) {
-        padding: 2rem;
+        // padding: 2rem;
     }
 
     @include respond(430px) {
-        height: calc(100vh - 4rem);
+        // height: calc(100vh - 4rem);
     }
 
     @include respond(360px) {
-        height: 100vh;
+        // height: 100vh;
     }
 
     &__logo {
@@ -43,14 +43,15 @@
         // display: grid;
         // grid-template-columns: 1fr min-content;
 
-        margin: 4rem 0;
+        margin: 4rem auto;
         display: flex;
         align-items: center;
         justify-content: space-between;
+        width: 80%;
         
         
         &--text {
-            margin-left: 8%;
+            // margin-left: 8%;
 
             @include respond(600px) {
                 margin: 0 auto;
@@ -111,7 +112,7 @@
             }
 
             img {
-                height: 36rem;
+                height: 40rem;
                 border-radius: 50%;
                 padding: 1rem;
 
