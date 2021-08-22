@@ -609,13 +609,17 @@ h2 {
 }
 
 .about {
-  padding: 6% 12%;
+  padding: 6% 0;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  background-color: #151515;
 }
 
 .about__body {
+  width: 80%;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;

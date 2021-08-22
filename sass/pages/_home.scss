@@ -4,21 +4,7 @@
     padding: 4rem;
     background-color: $bg-color-light;
     overflow: hidden;
-    // height: calc(100vh - 8rem);
     height: 100vh;
-    // margin: .5rem;
-
-    @include respond(472px) {
-        // padding: 2rem;
-    }
-
-    @include respond(430px) {
-        // height: calc(100vh - 4rem);
-    }
-
-    @include respond(360px) {
-        // height: 100vh;
-    }
 
     &__logo {
         font-size: 3rem;
@@ -40,26 +26,17 @@
     }
 
     &__body {
-        // display: grid;
-        // grid-template-columns: 1fr min-content;
-
         margin: 4rem auto;
         display: flex;
         align-items: center;
         justify-content: space-between;
         width: 80%;
         
-        
         &--text {
-            // margin-left: 8%;
 
             @include respond(600px) {
                 margin: 0 auto;
                 text-align: center;
-
-            }
-            
-            @include respond(375px) {
             }
 
             h1 {
@@ -135,14 +112,17 @@
 }
 
 .about {
-    padding: 6% 12%;
-    // height: 90vh;
+    padding: 6% 0;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background-color: $bg-color-dark;
 
 
     &__body {
+        width: 80%;
+        margin: 0 auto;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -159,10 +139,6 @@
             line-height: 1.8;
             margin-top: 5rem;
 
-            @include respond(720px) {
-                // width: 100%;
-            }
-
             & p:nth-child(2) {
                 margin-top: 1rem;
 
@@ -175,16 +151,6 @@
                     li {
                         position: relative;
                         margin-left: 1.5rem;
-
-                        // &::before {
-                        //     content: "▹";
-                        //     position: absolute;
-                        //     left: 30%;
-                        //     top: 30%;
-                        //     color: $pink;
-                        //     font-size: 1.3rem;
-                        //     line-height: 12px;
-                        // }
                     }
                 }
             }
